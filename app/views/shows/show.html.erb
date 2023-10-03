@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question and Answer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="/assets/application.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="u2">Stupid Coaching</h1>
+            <h3 class="u4">Your Question:</h3>
+            <p class="u5"><%= question %></p>
+            <h3 class="u4">Answer from Coach:</h3>
+            <p class="u5"><%= @answer %></p>
+            <a href="<%= ask_path %>" class="btn btn-primary btn-block">Ask Another Question</a>
+            <img src="https://i.pinimg.com/originals/f1/04/ca/f104ca9dc7a7626ca4e587792da17554.gif" alt="funny Thierry">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

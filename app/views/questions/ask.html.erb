@@ -1,5 +1,39 @@
- <h1> Stupid Coaching<h1>
-<form action="/answer" data-turbo="false">
-<input type="text"  placeholder="Ask a question to the coach!">
-  <input type="submit"  value="Ask">
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/assets/application.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <title>Stupid Coaching</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="bo">Stupid Coaching</h1>
+
+    <form action="<%= show_path %>" method="post" class="mt-4">
+      <%= csrf_meta_tags %>
+      <div class="form-group">
+        <label for="question">Your Question:</label>
+        <input type="text" id="question" name="question" class="form-control" placeholder="Ask the coach anything!">
+      </div>
+      <button type="submit" class="btn btn-primary">Ask</button>
+
+      <div class="mt-4">
+        <h3>Try one of these in the question section!</h3>
+        <ul>
+          <li><h6>I am going to work</h6></li>
+          <li><h6>My name is (Your_name)</h6></li>
+          <li><h6>Include '?' at the end of your question</h6></li>
+          <li><h6>**Ask anything else</h6></li>
+        </ul>
+       <img src="https://i.pinimg.com/originals/5f/e2/d0/5fe2d01784f6e09ecf77c9083d065c9a.gif" alt="funny Thierry">
+         <img src="https://i.pinimg.com/originals/c7/0f/36/c70f3655efd47013d0d0f4e274750a9f.gif" alt="funny Thierry">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
