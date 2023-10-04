@@ -29,7 +29,6 @@ class QuestionsController < ActionController::Base
   end
 
   def extract_name(question)
-    # Extract the name from the user's question if it includes "my name is"
     if question.downcase.include?("my name is")
       name = question.downcase.split("my name is").last.strip
       return name unless name.empty?
